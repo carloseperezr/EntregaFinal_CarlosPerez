@@ -1,0 +1,21 @@
+/* Clear */
+
+.clear-seccion-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-card-contenedor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+
+    .clear-card{
+        width: 18rem;
+        margin: 20px;
+    }
+}

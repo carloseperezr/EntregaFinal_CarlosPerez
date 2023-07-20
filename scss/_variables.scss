@@ -1,0 +1,70 @@
+/* Variables */
+
+$mainTitleColor : #5327288c;
+$secondaryTitleColor: #c78c3a;
+
+$mainTitleFont: Georgiano;
+$secondaryTitleFont:'Nunito Sans', sans-serif;
+
+$backgroundClear: #f3ddb6a8;
+$backgroundDark: #d6bf9380;
+
+
+$mainColor:#532728;
+$mainColorHover:#53272867;
+$secondaryColor:#f3ddb6;
+$thirdColor: #ffffff;
+
+@mixin actionButton{
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: $secondaryTitleFont;
+    color: $secondaryColor;
+    background-color: $mainColor;
+    transition: all 0.2s ease-in;
+    font-weight: bold;
+    &:hover{
+        color:$thirdColor ;
+    }
+}
+
+@mixin tituloPrincipal {
+    text-align: center;
+    font-family: $mainTitleFont;
+    font-size: 64px;
+    font-weight: 800;
+    margin: 20px 0px 50px 0px ;
+    color: $mainTitleColor;
+}
+
+@mixin tituloSecundario {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $secondaryTitleFont;
+    font-size: 12px;
+    margin-top: 50px;
+    color: $secondaryTitleColor;
+}
+
+@mixin textoInformativo{
+    font-family: $secondaryTitleFont;
+    color: $mainColor;
+    width: 70%;
+    text-align: center;
+}
+
+@mixin floraBotonHover{
+    color:$thirdColor ;
+    background-color: $mainColor;
+}
+
+@mixin shareButton{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $secondaryTitleFont;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: $mainColor;
+    font-weight: bold;
+}

@@ -1,888 +1,786 @@
-/* HTML reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Variables */ /* Header */
+.navbar {
+  background-color: rgba(243, 221, 182, 0.6588235294);
+}
+.navbar .navbar-collapse {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .header-logo {
+  margin: 0;
+  padding: 0;
+}
+.navbar .header-logo a {
+  padding-left: 25px;
+  font-family: Georgiano;
+  font-size: 48px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #532728;
+  align-items: center;
+}
+.navbar .navbar-nav {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navbar .navbar-nav .nav-item {
+  margin-right: 15px;
+}
+.navbar .navbar-nav .hero-seccion-boton {
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #f3ddb6;
+  background-color: #532728;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+}
+.navbar .navbar-nav .hero-seccion-boton:hover {
+  color: #ffffff;
 }
 
-/* Fonts */
-
-@font-face {
-    src: url(./assets/fonts/GEORGIANO.otf);
-    font-family: Georgiano;
+.nav-logo-icon {
+  font-family: Georgiano;
+  font-weight: 800;
+  border: #532728;
 }
 
-/* Estilos Generalos */
-
-.titulo-principal{
-    text-align: center;
-    font-family: Georgiano;
-    font-size: 64px;
-    font-weight: 800;
-    margin: 20px 0px 50px 0px ;
-    color: #5327288c;
-}
-.titulo-secundario{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 12px;
-    margin-top: 50px;
-    color: #c78c3a;
-}
-
-.texto-informativo{
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
-    width: 70%;
-    text-align: center;
-}
-
-.card-title, .card-text{
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.flora-boton{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: 'Nunito Sans', sans-serif;
-    color: #f3ddb6;
-    background-color: #532728;
-    padding: 5px 20px;
-    border-radius: 10px;
-    transition: all 0.2s ease-in;
-}
-
-.flora-boton:hover{
-    color:rgb(255, 255, 255) ;
-    background-color: #532728;
-}
-
-.share-boton{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: 'Nunito Sans', sans-serif;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #532728;
-    font-weight: bold;
-}
-
-.share-boton:hover{
-    color: #532728;
-}
-
-/* Header */
-
-.navbar{
-    background-color: #f3ddb6a8;
-}
-
-.navbar-collapse{
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo a{
-    padding-left: 25px;
-    font-family: Georgiano;
-    font-size: 48px;
-    font-weight: 800;
-    text-decoration: none;
-    color: #532728;
-    align-items: center;
-}
-
-.header-logo{
-    margin: 0;
-    padding: 0;
-}
-
-.header-logo a:hover{
-    color: #532728;
-}
-
-.navbar-nav{
-    padding-right: 25px;
-}
-
-.nav-item{
-    margin-right: 15px;
-}
-
-.nav-logo-icon{
-    font-family: Georgiano;
-    font-weight: 800;
-    border: #532728;
-}
-
-
+/* Index */
 /* Seccion hero */
-
-.hero-seccion{
-    width: 100%;
-    height: 80vh;
-    background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)),
-    url('https://images.pexels.com/photos/7291750/pexels-photo-7291750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.hero-seccion {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)), url("https://images.pexels.com/photos/7291750/pexels-photo-7291750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.hero-seccion-texto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 32rem;
-    background-color: #d6bf9380;
-    height: 70%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    flex-wrap: nowrap;
-    color: rgb(179, 179, 179);
+.hero-seccion .hero-seccion-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 32rem;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  height: 70%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
-
-.hero-seccion-titulo{
-    width: 100%;
+.hero-seccion .hero-seccion-texto .titulo-hero-seccion {
+  font-family: Georgiano;
+  font-size: 80px;
+  width: 100vw;
+  color: rgba(83, 39, 40, 0.5490196078);
+  text-align: center;
+  font-weight: 600;
 }
-
-.titulo-hero-seccion{
-    font-family: Georgiano;
-    font-size: 80px;
-    width: 100vw;
-    color: #5327288c;
-    text-align: center;
-    font-weight: 600;
+.hero-seccion .hero-seccion-texto .hero-seccion-info {
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #532728;
 }
-
-.hero-seccion-info{
-    font-size: 24px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    color: #5327288c;
+.hero-seccion .hero-seccion-texto .hero-seccion-boton {
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #f3ddb6;
+  background-color: #532728;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
 }
-
-.hero-seccion-boton{
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    font-family: 'Nunito Sans', sans-serif;
-    margin-top: 20px;
-    color: #f3ddb6;
-    background-color: #532728;
-    transition: all 0.2s ease-in;
-    font-weight: bold;
+.hero-seccion .hero-seccion-texto .hero-seccion-boton:hover {
+  color: #ffffff;
 }
-
-.hero-seccion-boton:hover{
-    color:rgb(255, 255, 255) ;
+.hero-seccion .hero-seccion-acciones {
+  display: flex;
+  width: 90%;
+  height: 10%;
+  margin-top: 20px;
+  justify-content: space-between;
 }
-
-.hero-seccion-acciones{
-    display: flex;
-    width: 90%;
-    height: 10%;
-    margin-top: 20px;
-    justify-content: space-between;
+.hero-seccion .hero-seccion-acciones .hero-seccion-acciones-redes {
+  display: flex;
+  list-style-type: none;
 }
-
-.hero-seccion-acciones-redes{
-    display: flex;
-    list-style-type: none;
+.hero-seccion .hero-seccion-acciones .hero-seccion-acciones-redes li a {
+  text-decoration: none;
+  color: #532728;
+  margin-right: 20px;
 }
-
-.hero-seccion-acciones-redes li a{
-    text-decoration: none;
-    color: #5327288c;
-    margin-right: 20px;
+.hero-seccion .hero-seccion-acciones .hero-seccion-acciones-redes li a:hover {
+  color: rgba(83, 39, 40, 0.4039215686);
 }
-
-.hero-seccion-acciones-redes li a:hover{
-    color: #532728;
+.hero-seccion .hero-seccion-ver-coleccion a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #532728;
 }
-
-.hero-seccion-ver-coleccion a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #5327288c;
+.hero-seccion .hero-seccion-ver-coleccion a:hover {
+  color: rgba(83, 39, 40, 0.4039215686);
 }
-
-.hero-seccion-ver-coleccion a:hover{
-    color: #532728;
-}
-
 
 /* Seccion Nuestro Servicios */
-
-.nuestros-servicios-seccion{
-    background-color: #f3ddb6a8;
-    height: 100%    ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.nuestros-servicios-seccion {
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.nuestros-servicios-cards{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
+.nuestros-servicios-seccion .nuestros-servicios-cards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
-
-.nuestros-servicios-cards .card{
-    margin: 10px;
-    background-color: #d6bf9380;
-    border: none;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+.nuestros-servicios-seccion .nuestros-servicios-cards .card {
+  margin: 10px;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  border: none;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
-
-.nuestros-servicios-cards .card .card-img-top{
-    height: 400px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    color:linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)) ;
+.nuestros-servicios-seccion .nuestros-servicios-cards .card .card-img-top {
+  height: 400px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  color: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233));
 }
-
-.nuestros-servicios-cards .card .card-body{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+.nuestros-servicios-seccion .nuestros-servicios-cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
-
-.nuestros-servicios-cards .card h3{
-    font-family: Georgiano;
+.nuestros-servicios-seccion .nuestros-servicios-cards .card h3 {
+  font-family: Georgiano;
 }
-
-.nuestros-servicios-cards .card .card-text{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 200;
+.nuestros-servicios-seccion .nuestros-servicios-cards .card .card-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 /* Seccion flora regalos */
-
-.flora-regalos-seccion{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 500px;
+.flora-regalos-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
 }
-
-.flora-regalos-info{
-    width: 50%;
+.flora-regalos-seccion .flora-regalos-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.flora-regalos-img{
-    text-align: center;
-    width: 50%;
+.flora-regalos-seccion .flora-regalos-img {
+  text-align: center;
+  width: 50%;
 }
-
-.flora-regalos-seccion .flora-regalos-img img{
+.flora-regalos-seccion .flora-regalos-img img {
   width: 80%;
-  height: 700px; 
+  height: 700px;
   margin-top: 200px;
   object-fit: cover;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
-.flora-regalos-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.flora-regalos-texto{
-    text-align: center;
-    width: 70%;
-}
-
 /* Seccion flora populares */
-
-.flora-populares-seccion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #d6bf9380;
-    padding: 150px 0px 50px 0px;
+.flora-populares-seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  padding: 150px 0px 50px 0px;
 }
-
-.flora-populares-info{
-    text-align: center;
+.flora-populares-seccion .flora-populares-info {
+  text-align: center;
 }
-
-.flora-populares-cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px 0px;
+.flora-populares-seccion .flora-populares-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0px;
 }
-
-.flora-populares-cards .card{
-    margin: 10px;
-    color: #532728;
-    border: none;
+.flora-populares-seccion .flora-populares-cards .card {
+  margin: 10px;
+  color: #532728;
+  border: none;
 }
-
-.flora-populares-cards .card-body{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #d6bf9380;
+.flora-populares-seccion .flora-populares-cards .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(214, 191, 147, 0.5019607843);
 }
 
 /*  Seccion de contacto */
-
-.contacto-seccion{
-    background-color: #f3ddb6a8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contacto-seccion {
+  background-color: rgba(243, 221, 182, 0.6588235294);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-seccion .contacto-info-seccion {
+  margin-top: 50px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
-.contacto-info-seccion{
-    margin-top: 50px;
-    width: 600px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #d6bf93;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+/* Colecciones */
+.colecciones-seccion-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  height: 100%;
 }
 
-/* Seccion Colecciones */
-
-.colecciones-seccion-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    height: 100%;
+.colecciones-seccion-cards {
+  background-color: rgba(243, 221, 182, 0.6588235294);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.colecciones-seccion-cards .card {
+  width: 400px;
+  height: 760px;
+  margin: 20px 10px;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.colecciones-seccion-cards .card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.colecciones-seccion-cards .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgiano;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 20px 0px;
+  color: #532728;
+}
+.colecciones-seccion-cards .card-text {
+  text-align: center;
+  color: #532728;
+  text-transform: none;
+  font-size: 18px;
 }
 
-.colecciones-seccion-cards{
-    background-color: #f3ddb6a8;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
+/* Nosotros */
+.nosotros-seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)), url("https://images.pexels.com/photos/7291997/pexels-photo-7291997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-.colecciones-seccion-cards .card{
-    width: 400px;
-    height: 760px;
-    margin: 20px 10px;
-    text-align: center;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-}
-
-.colecciones-seccion-cards .card img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-}
-
-.colecciones-seccion-cards .card-title{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Georgiano;
-    font-size: 32px;
-    font-weight: 800;
-    margin: 20px 0px ;
-    color: #5327288c;
-}
-
-.colecciones-seccion-cards .card-text{
-    text-align: center;
-    color: #532728;
-    text-transform: none;
-    font-size: 18px;
-}
-
-/* Seccion Nosotros */
-
-.nosotros-seccion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)), url("https://images.pexels.com/photos/7291997/pexels-photo-7291997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.nosotros-seccion-contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: auto;
-    background-color: #d6bf9380;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    margin: 50px 0px;
+.nosotros-seccion .nosotros-seccion-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin: 50px 0px;
 }
 
 /* Seccion Tienda */
-
-.tienda-seccion{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
+.tienda-seccion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
-
-.tienda-seccion .coleccion-clear{
-    padding: 50px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.tienda-seccion .coleccion-clear {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
-
-.coleccion-clear-card-contenedor{
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.tienda-seccion .coleccion-clear .coleccion-clear-card-contenedor {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.coleccion-clear-card-contenedor .card{
-    margin: 15px;
-    border: none;
+.tienda-seccion .coleccion-clear .coleccion-clear-card-contenedor .card {
+  margin: 15px;
+  border: none;
 }
-
-.tienda-seccion .coleccion-ceramic{
-    padding: 50px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #d6bf93;
+.tienda-seccion .coleccion-ceramic {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 221, 182, 0.6588235294);
 }
-
-.tienda-seccion h5{
-    text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
+.tienda-seccion .coleccion-ceramic .coleccion-ceramic-card-contenedor {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.tienda-seccion p{
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
+.tienda-seccion .coleccion-ceramic .coleccion-ceramic-card-contenedor .card {
+  margin: 15px;
+  border: none;
+}
+.tienda-seccion h5 {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
+}
+.tienda-seccion p {
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
 }
 
 /* Pagina Pronto */
-
-.pronto-seccion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)), url("https://images.pexels.com/photos/7291607/pexels-photo-7291607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.pronto-seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(243, 221, 182, 0.281), rgba(243, 221, 182, 0.233)), url("https://images.pexels.com/photos/7291607/pexels-photo-7291607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pronto-seccion .pronto-seccion-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 90%;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin: 50px 0px;
 }
 
-.pronto-seccion-contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 90%;
-    background-color: #d6bf9380;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    margin: 50px 0px;
+/*  Producto */
+.pagina-producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.pagina-producto .producto-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 50px;
+}
+.pagina-producto .proucto-informacion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pagina-producto .titulo-producto-card {
+  font-family: Georgiano;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 20px 0px 50px 0px;
+  color: #532728;
+}
+.pagina-producto .producto-card-body {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.pagina-producto .producto-card-texto {
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
+}
+.pagina-producto .acciones-producto {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* Pagina Ceramic */
-
-.ceramic-seccion-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Ceramic */
+.ceramic-seccion-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.ceramic-card-contenedor{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px;
+.ceramic-card-contenedor {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.ceramic-card-contenedor .ceramic-card {
+  width: 18rem;
+  margin: 20px;
 }
 
-.ceramic-card{
-    width: 18rem;
-    margin: 20px;
+/* Clear */
+.clear-seccion-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Pagina Clear */
-
-.clear-seccion-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.clear-card-contenedor {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px;
 }
-
-.clear-card-contenedor{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px;
+.clear-card-contenedor .clear-card {
+  width: 18rem;
+  margin: 20px;
 }
-
-.clear-card{
-    width: 18rem;
-    margin: 20px;
-}
-
 
 /* Footer */
-
-.footer{
-    border-top: 2px solid #532728;
-    background-color: #f3ddb6a8;
-    display: flex;
-    flex-direction: column;
+.footer {
+  border-top: 2px solid #532728;
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  display: flex;
+  flex-direction: column;
 }
-.footer-texto-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer .footer-texto-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.footer-seccion-1{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+.footer .footer-seccion-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
-
-.footer-seccion-1 .footer-logo{
-    font-family: Georgiano;
-    font-size: 60px;
-    font-weight: 800;
+.footer .footer-seccion-1 .footer-logo {
+  font-family: Georgiano;
+  font-size: 60px;
+  font-weight: 800;
 }
-
-.footer-seccion-1 .footer-logo a{
-    text-decoration: none;
-    color: #532728;
+.footer .footer-seccion-1 a {
+  text-decoration: none;
+  color: #532728;
 }
-
-.footer-seccion-1 .footer-mensaje{
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
+.footer .footer-seccion-1 .footer-mensaje {
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
 }
-
-.footer-seccion-1 .formulario-suscripcion{
-    display: flex;
+.footer .footer-seccion-1 .formulario-suscripcion {
+  display: flex;
 }
-
-.footer-seccion-2{
-    display: flex;
+.footer .footer-seccion-2 {
+  display: flex;
 }
-.footer-seccion-2 div{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
+.footer .footer-seccion-2 div {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
 }
-
-.footer-seccion-2 div a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
+.footer .footer-seccion-2 div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
 }
-
-.footer-seccion-2 div a:hover{
-    color: #5327284b;
+.footer .footer-seccion-2 div a:hover {
+  color: rgba(83, 39, 40, 0.4039215686);
 }
-
-.footer-redes-iconos{
-    background-color:#d6bf93 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
+.footer .footer-redes-iconos {
+  background-color: rgba(214, 191, 147, 0.5019607843);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
 }
-
-.footer-iconos{
-    margin-right: 20px;
-    text-decoration: none;
+.footer .footer-redes-iconos .footer-iconos {
+  margin-right: 20px;
+  text-decoration: none;
 }
-
-.footer-autor{
-    margin: 5px 0px 0px 20px;
+.footer .footer-redes-iconos .footer-iconos a {
+  text-decoration: none;
+  color: #532728;
+  margin-right: 15px;
+}
+.footer .footer-redes-iconos .footer-iconos a:hover {
+  text-decoration: none;
+  color: rgba(83, 39, 40, 0.4039215686);
+  margin-right: 15px;
+}
+.footer .footer-redes-iconos .footer-autor {
+  margin: 5px 0px 0px 20px;
 }
 
-.footer-iconos a{
-    text-decoration: none;
-    color: #532728;
-    margin-right: 15px;
+/* HTML reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.footer-iconos a:hover{
-    text-decoration: none;
-    color: #5327285b;
-    margin-right: 15px;
+/* Fonts */
+@font-face {
+  src: url(./assets/fonts/GEORGIANO.otf);
+  font-family: Georgiano, sans-serif;
+}
+/* Estilos Generales */
+.titulo-principal {
+  text-align: center;
+  font-family: Georgiano;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 20px 0px 50px 0px;
+  color: rgba(83, 39, 40, 0.5490196078);
 }
 
-/* Pagina Producto */
+.titulo-secundario {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  margin-top: 50px;
+  color: #c78c3a;
+}
 
-.pagina-producto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.texto-informativo {
+  font-family: "Nunito Sans", sans-serif;
+  color: #532728;
+  width: 70%;
+  text-align: center;
+}
+
+.card-title, .card-text {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.flora-boton {
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #f3ddb6;
+  background-color: #532728;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+}
+.flora-boton:hover {
+  color: #ffffff;
+}
+
+.flora-boton:hover {
+  color: #ffffff;
+  background-color: #532728;
+}
+
+.share-boton {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #532728;
+  font-weight: bold;
+}
+
+.share-boton:hover {
+  color: rgba(83, 39, 40, 0.4039215686);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header-logo a {
+    display: none;
+  }
+  .navbar-nav {
+    padding: 0px;
+  }
+  .hero-seccion-texto {
+    width: 60%;
+  }
+  .flora-regalos-seccion .flora-regalos-info {
     width: 100%;
-    height: auto;
-}
-
-.producto-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 50px;
-}
-
-.proucto-informacion{
+  }
+  .flora-regalos-info {
+    width: 40%;
+  }
+  .footer {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.titulo-producto-card{
-    font-family: Georgiano;
-    font-size: 64px;
-    font-weight: 800;
-    margin: 20px 0px 50px 0px ;
-    color: #5327288c;
-}
-
-.producto-card-body{
-    margin-left: 20px;
+  }
+  .footer-seccion-1 {
     display: flex;
     flex-direction: column;
-}
-
-.producto-card-texto{
-    font-family: 'Nunito Sans', sans-serif;
-    color: #532728;
-}
-
-.acciones-producto{
-    padding: 10px;
+  }
+  .footer-seccion-1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-seccion-1 button {
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-left: -1px;
+  }
+  .footer-seccion-2 div {
+    font-size: 14px;
+  }
+  .footer-texto-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .colecciones-seccion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .colecciones-seccion-cards .card {
+    width: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .colecciones-seccion-info .colecciones-info-texto {
+    width: 100%;
+    font-size: 16px;
+  }
+  .nosotros-seccion-contenedor {
+    width: 90%;
+  }
+  .pronto-seccion-contenedor {
+    width: 90%;
+  }
 }
-
-
-/* Media Queries */
-
-@media screen and (max-width: 768px) {
-
-    .header-logo a{
-        display: none;
-    }
-
-    .navbar-nav{
-        padding: 0px;
-    }
-
-    .hero-seccion-texto{
-        width: 60%;
-    }
-
-    .flora-regalos-seccion .flora-regalos-info{
-        width: 100%;
-    }
-
-    .flora-regalos-info{
-        width: 40%;
-    }
-
-    .footer{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-seccion-1{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-seccion-1 form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-seccion-1 button{
-        margin-top: 10px;
-        align-self: flex-start;
-        margin-left: -1px;
-    }
-
-    .footer-seccion-2 div{
-        font-size: 14px;
-    }
-
-    .footer-texto-info{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .colecciones-seccion-cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .colecciones-seccion-cards .card{
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-    }
-
-    .colecciones-seccion-info .colecciones-info-texto{
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .nosotros-seccion-contenedor{
-        width: 90%;
-    }
-
-    .pronto-seccion-contenedor{
-        width: 90%;
-    }
-}
-
 @media screen and (max-width: 425px) {
-    .hero-seccion-texto h1{
-        font-family: Georgiano;
-        font-size: 48px;
-        width: 100vw;
-    }
-
-    .titulo-principal{
-        font-size: 48px;
-    }
-
-    .hero-seccion-info{
-        font-size: 18px;
-    }
-
-    .hero-seccion-acciones{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero-seccion-acciones-redes{
-        padding: 0px;
-    }
-
-    .nuestros-servicios-info h2{
-        font-size: 32px;
-    }
-
-    .flora-regalos-seccion .flora-regalos-img{
-       display: none;
-    }
-    
-    .flora-regalos-seccion .flora-regalos-info{
-        width: 100%;
-    }
-
-    .flora-populares-info{
-        margin-top: -100px;
-    }
-
-    .footer{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-seccion-2 div{
-        font-size: 10px;
-    }
-    
-    .footer-texto-info{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .colecciones-seccion-info{
-        height: 100%;
-    }
-
-    .colecciones-seccion-cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .colecciones-seccion-cards .card{
-        width: 250px;
-        text-align: center;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        margin: 20px 0px;
-    }
-
-    .nosotros-seccion-contenedor{
-        width: 100%;
-    }
+  .hero-seccion .hero-seccion-texto {
+    width: 100%;
+  }
+  .hero-seccion .hero-seccion-texto .titulo-hero-seccion {
+    font-size: 48px !important;
+    font-family: Georgiano;
+  }
+  .titulo-principal {
+    font-size: 48px;
+  }
+  .hero-seccion-info {
+    font-size: 18px;
+  }
+  .hero-seccion-acciones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-seccion-acciones-redes {
+    padding: 0px;
+  }
+  .nuestros-servicios-info h2 {
+    font-size: 32px;
+  }
+  .flora-regalos-info .texto-informativo {
+    width: 90%;
+  }
+  .flora-regalos-seccion .flora-regalos-img {
+    display: none;
+  }
+  .flora-regalos-seccion .flora-regalos-info {
+    width: 100%;
+  }
+  .flora-populares-info {
+    margin-top: -100px;
+  }
+  .footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-seccion-2 div {
+    font-size: 10px;
+  }
+  .footer-texto-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .colecciones-seccion-info {
+    height: 100%;
+  }
+  .colecciones-seccion-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .colecciones-seccion-cards .card {
+    width: 250px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 20px 0px;
+  }
+  .nosotros-seccion-contenedor {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

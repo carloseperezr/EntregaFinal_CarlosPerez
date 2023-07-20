@@ -1,0 +1,40 @@
+/* Header */
+
+.navbar{
+    background-color: $backgroundClear;
+
+    .navbar-collapse{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo{
+        margin: 0;
+        padding: 0;
+        a{
+            padding-left: 25px;
+            font-family: $mainTitleFont;
+            font-size: 48px;
+            font-weight: 800;
+            text-decoration: none;
+            color: $mainColor;
+            align-items: center;
+        }
+    }
+
+    .navbar-nav{
+        padding-left: 25px;
+        padding-right: 25px;
+        .nav-item{
+            margin-right: 15px;
+        }
+        .hero-seccion-boton{
+            @include actionButton
+            }
+        }
+    }
+    .nav-logo-icon{
+        font-family: $mainTitleFont;
+        font-weight: 800;
+        border: $mainColor;
+    }

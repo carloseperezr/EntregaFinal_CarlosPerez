@@ -1,0 +1,14 @@
+{
+  "name": "preentrega2-carlos-perez",
+  "version": "1.0.0",
+  "description": "Flora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Perez",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

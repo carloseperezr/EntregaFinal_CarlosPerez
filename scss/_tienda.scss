@@ -1,0 +1,67 @@
+/* Seccion Tienda */
+
+.tienda-seccion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+    .coleccion-clear{
+        padding: 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .coleccion-clear-card-contenedor{
+            display: flex;
+            width: 90%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            
+            .card{
+                margin: 15px;
+                border: none;
+            }
+        }
+    }
+
+    .coleccion-ceramic{
+        padding: 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: $backgroundClear;
+
+        .coleccion-ceramic-card-contenedor{
+            display: flex;
+            width: 90%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            
+            .card{
+                margin: 15px;
+                border: none;
+            }
+        }
+    }
+
+    h5{
+        text-transform: uppercase;
+        font-family: $secondaryTitleFont;
+        color: $mainColor;
+    }
+
+    p{
+        font-family: $secondaryTitleFont;
+        color: $mainColor;
+    }
+}

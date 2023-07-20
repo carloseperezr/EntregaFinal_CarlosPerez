@@ -1,0 +1,240 @@
+@import 'variables';
+@import 'header';
+@import 'index';
+@import 'colecciones';
+@import 'nosotros';
+@import 'tienda';
+@import 'pronto';
+@import 'producto';
+@import 'ceramic';
+@import 'clear';
+@import 'footer';
+
+/* HTML reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+
+@font-face {
+    src: url(./assets/fonts/GEORGIANO.otf);
+    font-family: Georgiano, sans-serif;
+}
+
+/* Estilos Generales */
+
+.titulo-principal{
+    @include tituloPrincipal
+}
+
+.titulo-secundario{
+    @include tituloSecundario
+}
+
+.texto-informativo{
+    @include textoInformativo
+}
+
+.card-title, .card-text{
+    font-family: $secondaryTitleFont;
+}
+
+.flora-boton{
+    @include actionButton
+    }
+
+.flora-boton:hover{
+    @include floraBotonHover
+}
+
+.share-boton{
+    @include shareButton
+}
+
+.share-boton:hover{
+    color: $mainColorHover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    .header-logo a{
+        display: none;
+    }
+
+    .navbar-nav{
+        padding: 0px;
+    }
+
+    .hero-seccion-texto{
+        width: 60%;
+    }
+
+    .flora-regalos-seccion .flora-regalos-info{
+        width: 100%;
+    }
+
+    .flora-regalos-info{
+        width: 40%;
+    }
+
+    .footer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-seccion-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-seccion-1 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-seccion-1 button{
+        margin-top: 10px;
+        align-self: flex-start;
+        margin-left: -1px;
+    }
+
+    .footer-seccion-2 div{
+        font-size: 14px;
+    }
+
+    .footer-texto-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colecciones-seccion-cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .colecciones-seccion-cards .card{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .colecciones-seccion-info .colecciones-info-texto{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .nosotros-seccion-contenedor{
+        width: 90%;
+    }
+
+    .pronto-seccion-contenedor{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .hero-seccion {
+        .hero-seccion-texto {
+            width: 100%;
+            .titulo-hero-seccion{
+                font-size: 48px !important; 
+                font-family: $mainTitleFont;
+        }
+    }
+
+    }
+
+    .titulo-principal{
+        font-size: 48px;
+    }
+
+    .hero-seccion-info{
+        font-size: 18px;
+    }
+
+    .hero-seccion-acciones{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-seccion-acciones-redes{
+        padding: 0px;
+    }
+
+    .nuestros-servicios-info h2{
+        font-size: 32px;
+    }
+
+    .flora-regalos-info .texto-informativo{
+        width: 90%;
+    }
+
+    .flora-regalos-seccion .flora-regalos-img{
+       display: none;
+    }
+    
+    .flora-regalos-seccion .flora-regalos-info{
+        width: 100%;
+    }
+
+    .flora-populares-info{
+        margin-top: -100px;
+    }
+
+    .footer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-seccion-2 div{
+        font-size: 10px;
+    }
+    
+    .footer-texto-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .colecciones-seccion-info{
+        height: 100%;
+    }
+
+    .colecciones-seccion-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .colecciones-seccion-cards .card{
+        width: 250px;
+        text-align: center;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        margin: 20px 0px;
+    }
+
+    .nosotros-seccion-contenedor{
+        width: 100%;
+    }
+}

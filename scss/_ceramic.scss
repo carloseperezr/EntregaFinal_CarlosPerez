@@ -1,0 +1,23 @@
+/* Ceramic */
+
+.ceramic-seccion-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ceramic-card-contenedor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+
+    .ceramic-card{
+        width: 18rem;
+        margin: 20px;
+    }
+}
+
+

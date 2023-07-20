@@ -1,0 +1,86 @@
+/* Footer */
+.footer{
+    border-top: 2px solid $mainColor;
+    background-color: $backgroundDark;
+    display: flex;
+    flex-direction: column;
+
+    .footer-texto-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-seccion-1{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        .footer-logo{
+            font-family: $mainTitleFont;
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+        a{
+            text-decoration: none;
+            color: $mainColor;
+        }
+
+        .footer-mensaje{
+            font-family: $secondaryTitleFont;
+            color: $mainColor;
+        }
+
+        .formulario-suscripcion{
+            display: flex;
+        }
+    }
+
+    .footer-seccion-2{
+        display: flex;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+            
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $secondaryTitleFont;
+                color: $mainColor;
+                &:hover{
+                    color: $mainColorHover;
+                }
+            }
+        }
+    }
+
+    .footer-redes-iconos{
+        background-color:$backgroundDark ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+
+        .footer-iconos{
+            margin-right: 20px;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+                color: $mainColor;
+                margin-right: 15px;
+                &:hover{
+                    text-decoration: none;
+                    color: $mainColorHover;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .footer-autor{
+            margin: 5px 0px 0px 20px;
+        }
+    }
+}
