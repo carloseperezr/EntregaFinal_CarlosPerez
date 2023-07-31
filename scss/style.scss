@@ -11,10 +11,14 @@
 @import 'footer';
 
 /* HTML reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Fonts */
@@ -26,199 +30,229 @@
 
 /* Estilos Generales */
 
-.titulo-principal{
+.titulo-principal {
     @include tituloPrincipal
 }
 
-.titulo-secundario{
+.titulo-secundario {
     @include tituloSecundario
 }
 
-.texto-informativo{
+.texto-informativo {
     @include textoInformativo
 }
 
-.card-title, .card-text{
+.card-title,
+.card-text {
     font-family: $secondaryTitleFont;
 }
 
-.flora-boton{
+.flora-boton {
     @include actionButton
-    }
+}
 
-.flora-boton:hover{
+.flora-boton:hover {
     @include floraBotonHover
 }
 
-.share-boton{
+.share-boton {
     @include shareButton
 }
 
-.share-boton:hover{
+.share-boton:hover {
     color: $mainColorHover;
 }
 
-/* Media Queries */
+/* Media Queries - Posicionamiento de elementos */
 
 @media screen and (max-width: 768px) {
 
-    .header-logo a{
-        display: none;
+    .navbar {
+        .header-logo {
+            visibility: hidden
+        }
+
+        .navbar-nav {
+            padding: 0px;
+        }
     }
 
-    .navbar-nav{
-        padding: 0px;
-    }
-
-    .hero-seccion-texto{
-        width: 60%;
-    }
-
-    .flora-regalos-seccion .flora-regalos-info{
+    .hero-seccion-texto {
         width: 100%;
+
+        .titulo-hero-seccion {
+            font-size: 48px !important;
+            font-family: $mainTitleFont;
+        }
     }
 
-    .flora-regalos-info{
-        width: 40%;
+    .flora-regalos-seccion .flora-regalos-info {
+        width: 100%;
+
+        .flora-regalos-info {
+            width: 40%;
+        }
     }
 
-    .footer{
+    .footer {
         height: 100%;
         display: flex;
         flex-direction: column;
+
+        .footer-seccion-1 {
+            display: flex;
+            flex-direction: column;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            button {
+                margin-top: 10px;
+                align-self: flex-start;
+                margin-left: -1px;
+            }
+        }
     }
 
-    .footer-seccion-1{
-        display: flex;
-        flex-direction: column;
+    .footer-seccion-2 {
+        div {
+            width: 100%;
+            font-size: 10px;
+        }
+
+        .footer-texto-info {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    .footer-seccion-1 form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .footer-seccion-1 button{
-        margin-top: 10px;
-        align-self: flex-start;
-        margin-left: -1px;
-    }
 
-    .footer-seccion-2 div{
-        font-size: 14px;
-    }
-
-    .footer-texto-info{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .colecciones-seccion-cards{
+    .colecciones-seccion-cards {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+
+        .card {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
     }
 
-    .colecciones-seccion-cards .card{
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
+    .colecciones-seccion-info {
+        .colecciones-info-texto {
+            width: 100%;
+            font-size: 16px;
+        }
     }
 
-    .colecciones-seccion-info .colecciones-info-texto{
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .nosotros-seccion-contenedor{
+    .nosotros-seccion-contenedor {
         width: 90%;
     }
 
-    .pronto-seccion-contenedor{
+    .pronto-seccion-contenedor {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 
     .hero-seccion {
         .hero-seccion-texto {
             width: 100%;
-            .titulo-hero-seccion{
-                font-size: 48px !important; 
+
+            .titulo-hero-seccion {
+                font-size: 48px;
                 font-family: $mainTitleFont;
+            }
+        }
+
+        .hero-seccion-info {
+            font-size: 18px;
+        }
+
+        .hero-seccion-acciones {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .hero-seccion-acciones-redes {
+                padding: 0px;
+            }
         }
     }
 
+    .nuestros-servicios-info {
+        h2 {
+            font-size: 48px;
+        }
     }
 
-    .titulo-principal{
-        font-size: 48px;
+    .flora-regalos-info {
+        .texto-informativo {
+            width: 90%;
+        }
     }
 
-    .hero-seccion-info{
-        font-size: 18px;
+    .flora-regalos-seccion {
+        .flora-regalos-img {
+            display: none;
+        }
+
+        .flora-regalos-info {
+            width: 100%;
+
+            .titulo-principal {
+                font-size: 48px;
+            }
+        }
     }
 
-    .hero-seccion-acciones{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
 
-    .hero-seccion-acciones-redes{
-        padding: 0px;
-    }
-
-    .nuestros-servicios-info h2{
-        font-size: 32px;
-    }
-
-    .flora-regalos-info .texto-informativo{
-        width: 90%;
-    }
-
-    .flora-regalos-seccion .flora-regalos-img{
-       display: none;
-    }
-    
-    .flora-regalos-seccion .flora-regalos-info{
-        width: 100%;
-    }
-
-    .flora-populares-info{
+    .flora-populares-info {
         margin-top: -100px;
     }
 
-    .footer{
+    .footer {
+        .footer-texto-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .footer-seccion-2 {
+            div {
+                width: 100%;
+                font-size: 10px;
+            }
+        }
+
+        .footer-texto-info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .colecciones-seccion-info {
         height: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
-    .footer-seccion-2 div{
-        font-size: 10px;
-    }
-    
-    .footer-texto-info{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .colecciones-seccion-info{
-        height: 100%;
-    }
-
-    .colecciones-seccion-cards{
+    .colecciones-seccion-cards {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -226,7 +260,7 @@
         height: 100%;
     }
 
-    .colecciones-seccion-cards .card{
+    .colecciones-seccion-cards .card {
         width: 250px;
         text-align: center;
         border-top-left-radius: 50%;
@@ -234,7 +268,7 @@
         margin: 20px 0px;
     }
 
-    .nosotros-seccion-contenedor{
+    .nosotros-seccion-contenedor {
         width: 100%;
     }
 }

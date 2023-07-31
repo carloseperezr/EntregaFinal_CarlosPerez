@@ -1,17 +1,18 @@
 /* Header */
 
-.navbar{
+.navbar {
     background-color: $backgroundClear;
 
-    .navbar-collapse{
+    .navbar-collapse {
         justify-content: space-between;
         align-items: center;
     }
 
-    .header-logo{
+    .header-logo {
         margin: 0;
         padding: 0;
-        a{
+
+        a {
             padding-left: 25px;
             font-family: $mainTitleFont;
             font-size: 48px;
@@ -22,19 +23,22 @@
         }
     }
 
-    .navbar-nav{
+    .navbar-nav {
         padding-left: 25px;
         padding-right: 25px;
-        .nav-item{
+
+        .nav-item {
             margin-right: 15px;
         }
-        .hero-seccion-boton{
+
+        .hero-seccion-boton {
             @include actionButton
-            }
         }
     }
-    .nav-logo-icon{
-        font-family: $mainTitleFont;
-        font-weight: 800;
-        border: $mainColor;
-    }
+}
+
+.nav-logo-icon {
+    font-family: $mainTitleFont;
+    font-weight: 800;
+    border: $mainColor;
+}

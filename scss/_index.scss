@@ -19,7 +19,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 32rem;
+        width: 50%;
         background-color: $backgroundDark;
         height: 70%;
         border-top-left-radius: 50%;
@@ -180,6 +180,10 @@
 
     .flora-populares-info{
         text-align: center;
+
+        .titulo-principal{
+            font-size: 48px;
+        }
     }
 
     .flora-populares-cards{

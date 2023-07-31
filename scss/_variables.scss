@@ -4,18 +4,18 @@ $mainTitleColor : #5327288c;
 $secondaryTitleColor: #c78c3a;
 
 $mainTitleFont: Georgiano;
-$secondaryTitleFont:'Nunito Sans', sans-serif;
+$secondaryTitleFont: 'Nunito Sans', sans-serif;
 
 $backgroundClear: #f3ddb6a8;
 $backgroundDark: #d6bf9380;
 
 
-$mainColor:#532728;
-$mainColorHover:#53272867;
-$secondaryColor:#f3ddb6;
+$mainColor: #532728;
+$mainColorHover: #53272867;
+$secondaryColor: #f3ddb6;
 $thirdColor: #ffffff;
 
-@mixin actionButton{
+@mixin actionButton {
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 5px;
@@ -24,17 +24,18 @@ $thirdColor: #ffffff;
     background-color: $mainColor;
     transition: all 0.2s ease-in;
     font-weight: bold;
-    &:hover{
-        color:$thirdColor ;
+
+    &:hover {
+        color: $thirdColor ;
     }
 }
 
 @mixin tituloPrincipal {
     text-align: center;
     font-family: $mainTitleFont;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 800;
-    margin: 20px 0px 50px 0px ;
+    margin: 20px 0px 20px 0px;
     color: $mainTitleColor;
 }
 
@@ -47,19 +48,19 @@ $thirdColor: #ffffff;
     color: $secondaryTitleColor;
 }
 
-@mixin textoInformativo{
+@mixin textoInformativo {
     font-family: $secondaryTitleFont;
     color: $mainColor;
     width: 70%;
     text-align: center;
 }
 
-@mixin floraBotonHover{
-    color:$thirdColor ;
+@mixin floraBotonHover {
+    color: $thirdColor ;
     background-color: $mainColor;
 }
 
-@mixin shareButton{
+@mixin shareButton {
     text-transform: uppercase;
     font-size: 12px;
     font-family: $secondaryTitleFont;

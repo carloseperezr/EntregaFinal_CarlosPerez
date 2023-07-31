@@ -509,7 +509,7 @@
 .footer .footer-seccion-1 {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 40px;
 }
 .footer .footer-seccion-1 .footer-logo {
   font-family: Georgiano;
@@ -591,9 +591,9 @@
 .titulo-principal {
   text-align: center;
   font-family: Georgiano;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 800;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 50px 0px;
   color: rgba(83, 39, 40, 0.5490196078);
 }
 
@@ -613,8 +613,7 @@
   text-align: center;
 }
 
-.card-title,
-.card-text {
+.card-title, .card-text {
   font-family: "Nunito Sans", sans-serif;
 }
 
